@@ -11,7 +11,59 @@
 </head>
 
 <body>
+    <header>
+        <h1> <span class="logo">🍝</span> Le Carnet Gourmand</h1>
+        <h2> Avis des lecteurs </h2>
+    </header>
+    <main>
+        <h2> Pâtes crémeuses au citron </h2>
 
+        <p> laissez votre avis sur cette recette grâce au formulaire ci-contre.</p>
+
+        <section class="recette">
+            <h2> Ingrédients </h2>
+            <ul>
+                <li>Pâtes</li>
+                <li>Créme</li>
+                <li>Citron</li>
+                <li>Parmesan</li>
+            </ul>
+
+            <h2> Préparation </h2>
+            <ol>
+                <li>Cuire les pâtes.</li>
+                <li>Mélanger la créme et le citron.</li>
+                <li>Ajouter le parmesan.</li>
+            </ol>
+        </section>
+    </main>
+    <aside>
+        <section class="forum_comment">
+            <h2> Laisser un commentaire </h2>
+
+            <form id="comment-form">
+                <label for="name">Votre nom :</label>
+                <input type="text" id="name" name="name" placeholder="Ex : Léa" required>
+                <p>Minimum 2 caractères</p>
+
+                <label for="comment">Votre commentaire :</label>
+                <textarea id="comment" name="comment" placeholder="Votre avis sur la recette..." required></textarea>
+                <p>Minimum 10 caractères</p>
+
+                <button type="submit">Publier</button>
+            </form>
+        </section>
+
+        <section class="comment-list">
+            <h2>Commentaires</h2>
+            <!-- JS va injecter ici -->
+            <ul id="comments"></ul>
+        </section>
+
+    </aside>
+    <footer>
+        <p>Devoir JavaScript - Frontend</p>
+    </footer>
     <script src="./assets/js/script.js"></script>
 </body>
 
